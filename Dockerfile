@@ -11,9 +11,9 @@ ARG RUBOCOP_VERSION
 RUN gem install rubocop -v ${RUBOCOP_VERSION}
 
 # install docker CLI
-ARG DOCKER_CLI_VERSION==5:19.03.8~3-0~debian-stretch
-ARG DOCKER_COMPOSE_VERSION=1.25.4
-ARG DOCKER_COMPOSE_CHECKSUM=542e93b1d5106d2769b325f60ba9a0ba087bb96e30dc2c1cb026f0cb642e9aed
+ARG DOCKER_CLI_VERSION==5:19.03.12~3-0~debian-stretch
+ARG DOCKER_COMPOSE_VERSION=1.26.2
+ARG DOCKER_COMPOSE_CHECKSUM=13e50875393decdb047993c3c0192b0a3825613e6dfc0fa271efed4f5dbdd6eb
 RUN set -x \
   && apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
